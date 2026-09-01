@@ -1,0 +1,8 @@
+node_modules
+dist
+content/*.html
+content/cookies.txt
+content/verify
+public/images/_t*.jpg
+public/images/_tcookie.jpg
+.DS_Store

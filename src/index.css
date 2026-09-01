@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Instrument Serif", "Times New Roman", serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --color-navy: #102033;
+  --color-navy-soft: #1a3148;
+  --color-ink: #1c1916;
+  --color-gold: #c4a15a;
+  --color-gold-deep: #9d7f38;
+  --color-cream: #f3eee6;
+  --color-mist: #e8e2d8;
+  --color-stone: #5f5952;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ef;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #c4a15a;
+  color: #102033;
+}
+
+:focus-visible {
+  outline: 2px solid #c4a15a;
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.8rem 1.45rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-gold {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.btn-gold:hover {
+  background: var(--color-gold-deep);
+  color: #fff;
+}
+
+.btn-navy {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.btn-navy:hover {
+  background: var(--color-navy-soft);
+}
+
+.btn-line {
+  border: 1px solid currentColor;
+  background: transparent;
+}
+
+.page-pad {
+  padding-bottom: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .page-pad {
+    padding-bottom: 0;
+  }
+}
