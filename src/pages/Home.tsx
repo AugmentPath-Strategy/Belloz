@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { builtBy, company, customHomes, images, services, story, testimonials, values } from "../data/content";
+import { builtBy, company, customHomes, homeHomes, images, services, story, testimonials, values } from "../data/content";
 
 export function Home() {
   const phone = company.phones[0];
@@ -9,8 +9,8 @@ export function Home() {
     <div className="page-pad">
       <section className="relative min-h-[100svh] overflow-hidden bg-navy text-white">
         <img
-          src={images.heroHome}
-          alt="Custom home built by Belloz Construction"
+          src={images.hero}
+          alt="The Twin Oaks Farmhouse, built by Belloz Construction"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.92)_0%,rgba(16,32,51,0.72)_46%,rgba(16,32,51,0.28)_100%)]" />
@@ -35,11 +35,11 @@ export function Home() {
 
       <section className="border-b border-black/5 bg-cream">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-2">
-          <a href={phone.href} className="text-navy">
+          <a href={phone.href} className="text-navy transition hover:text-gold-deep">
             <span className="label text-gold-deep">Call or text</span>
             <span className="mt-1 block font-display text-3xl md:text-4xl">{phone.display}</span>
           </a>
-          <a href={`mailto:${company.email}`} className="text-navy md:text-right">
+          <a href={`mailto:${company.email}`} className="text-navy transition hover:text-gold-deep md:text-right">
             <span className="label text-gold-deep">Email</span>
             <span className="mt-1 block font-display text-2xl md:text-4xl">{company.email}</span>
           </a>
@@ -62,12 +62,12 @@ export function Home() {
             <Link
               key={s.slug}
               to={`/work#${s.slug}`}
-              className={`group overflow-hidden rounded-3xl transition hover:-translate-y-0.5 ${
+              className={`group overflow-hidden rounded-3xl shadow-[0_1px_0_rgba(16,32,51,0.04)] transition hover:-translate-y-0.5 ${
                 i === 1 || i === 4 ? "bg-navy text-white" : "bg-white"
               }`}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img src={s.image} alt="" className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-6">
                 <h3 className="text-3xl">{s.name}</h3>
@@ -89,7 +89,7 @@ export function Home() {
           <div className="grid items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="grid h-[28rem] grid-cols-2 grid-rows-[7.25rem_minmax(0,1fr)] gap-3 sm:h-[36rem] sm:grid-rows-[8rem_minmax(0,1fr)] lg:h-full lg:min-h-[38rem]">
               <img
-                src={images.heroKitchen}
+                src={images.aboutKitchen}
                 alt="Kitchen built by Belloz Construction"
                 className="h-full w-full rounded-3xl object-cover [grid-area:1/1/3/2]"
               />
@@ -98,8 +98,8 @@ export function Home() {
                 <p className="mt-2 text-sm text-white/70">Years in the industry</p>
               </div>
               <img
-                src={customHomes.homes[0].image}
-                alt={customHomes.homes[0].name}
+                src={images.aboutBuild}
+                alt="Home framing by Belloz Construction"
                 className="h-full w-full rounded-3xl object-cover [grid-area:2/2/3/3]"
               />
             </div>
@@ -139,16 +139,19 @@ export function Home() {
             View all homes
           </Link>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {customHomes.homes.map((home) => (
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {homeHomes.map((home) => (
             <Link key={home.name} to="/homes" className="group">
               <div className="overflow-hidden rounded-3xl">
-                <img src={home.image} alt={home.name} className="h-80 w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <img src={home.image} alt={home.name} className="h-80 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[26rem]" />
               </div>
               <p className="mt-3 text-2xl text-navy">{home.name}</p>
             </Link>
           ))}
         </div>
+        <Link to="/homes" className="mt-8 block text-center text-sm font-semibold text-navy underline decoration-gold underline-offset-4 md:hidden">
+          View all homes
+        </Link>
       </section>
 
       <section className="bg-navy text-white">
@@ -167,9 +170,9 @@ export function Home() {
           </div>
         </div>
         <div className="mx-auto grid max-w-7xl gap-4 px-6 pb-24 md:grid-cols-3 md:pb-28">
-          <img src={images.bathroom} alt="Bathroom by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
-          <img src={images.kitchenWarm} alt="Kitchen by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
-          <img src={images.finish} alt="Finished work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
+          <img src={images.bandOne} alt="Finish work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
+          <img src={images.bandTwo} alt="Framing crew by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
+          <img src={images.bandThree} alt="Tile work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
         </div>
       </section>
 
@@ -178,7 +181,7 @@ export function Home() {
         <h2 className="mt-3 text-4xl text-navy md:text-5xl">In their words</h2>
         <div className="mt-12 space-y-5">
           {testimonials.map((quote) => (
-            <blockquote key={quote} className="rounded-3xl bg-white p-8 text-lg text-stone">
+            <blockquote key={quote} className="rounded-3xl bg-white p-8 text-lg text-stone shadow-[0_1px_0_rgba(16,32,51,0.04)]">
               "{quote}"
             </blockquote>
           ))}

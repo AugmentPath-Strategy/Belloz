@@ -22,15 +22,13 @@ export const founder = {
 
 export const images = {
   logo: "/images/home/001-AG8ngQVAkFE_BcjXDN2-gqzjMGpU.jpg",
-  heroHome: "/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg",
-  heroKitchen: "/images/home/003-AG8ngQWpqpfs1dlTZjJXiIeaTOFq.jpg",
-  kitchenWarm: "/images/home/006-AG8ngQV9BM83zzIWY3Z1xptfpr8H.jpg",
-  bathroom: "/images/home/007-AG8ngQXWxVOaw-CqrVMHD6Vw1B4t.jpg",
-  bathroomTwo: "/images/home/008-AG8ngQU9pu8hxsv4GHVhlrOfrZc6.jpg",
-  hvac: "/images/home/002-AG8ngQUaKOwqHCj9dRYgkQwAuysT.jpg",
-  demolition: "/images/home/016-AG8ngQXCbAK7hNmoDU6jWLCJUiRA.jpg",
-  framing: "/images/home/045-AG8ngQXAbI-a5LVZSyIBD1yzT9e3.jpg",
-  finish: "/images/home/162-AG8ngQX_BUv1dF-F7U0Tgv9wV0tH.jpg",
+  hero: "/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg",
+  aboutKitchen: "/images/home/004-AG8ngQXKWxj6PiS62lfIOfdxPuU0.jpg",
+  aboutBuild: "/images/home/050-AG8ngQWa1VKoowenl8g7BaWbLeiE.jpg",
+  bandOne: "/images/home/015-AG8ngQXtGVo3Gj0F0rJ1cwJiqCvD.jpg",
+  bandTwo: "/images/home/046-AG8ngQUHdY0KiEb7cgXkCTHfJzmo.jpg",
+  bandThree: "/images/home/070-AG8ngQVwq8XWmdy4zPWVWST08vRK.jpg",
+  standardWork: "/images/home/014-AG8ngQW3CJTnMHz_3u2fG1P3vK_1.jpg",
 };
 
 export const story = {
@@ -98,93 +96,108 @@ export const services = [
     slug: "custom-homes",
     name: "Custom home builds",
     text: "Each Belloz home is a reflection of craftsmanship, care, and thoughtful design, from foundation to finish.",
-    image: customHomes.homes[0].image,
+    image: "/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg",
   },
   {
     slug: "kitchens",
     name: "Kitchen & bath remodels",
     text: "Sophisticated, functional kitchens designed for modern living, where beauty and practicality meet in every detail.",
-    image: images.heroKitchen,
+    image: "/images/home/003-AG8ngQWpqpfs1dlTZjJXiIeaTOFq.jpg",
   },
   {
     slug: "bathrooms",
     name: "Bathrooms",
     text: "Elegant and thoughtfully designed custom bathrooms that bring a spa-like feel and lasting comfort to your home.",
-    image: images.bathroom,
+    image: "/images/home/007-AG8ngQXWxVOaw-CqrVMHD6Vw1B4t.jpg",
   },
   {
     slug: "demolition",
     name: "Demolition & lot clearing",
     text: "Expert site preparation handled safely and efficiently, creating a clean foundation for your next project.",
-    image: images.demolition,
+    image: "/images/home/016-AG8ngQXCbAK7hNmoDU6jWLCJUiRA.jpg",
   },
   {
     slug: "concrete",
     name: "Concrete",
     text: "Expertly poured and built to last, from solid foundations and decorative flatwork to elegant custom in-ground pools.",
-    image: images.framing,
+    image: "/images/home/019-AG8ngQXis3SSdK6Z10bm7KDW5nyu.jpg",
   },
   {
     slug: "framing",
     name: "Framing",
     text: "Precision framing that defines the structure and sets the standard for strength, quality, and alignment.",
-    image: images.framing,
+    image: "/images/home/045-AG8ngQXAbI-a5LVZSyIBD1yzT9e3.jpg",
   },
   {
     slug: "plumbing",
     name: "Plumbing",
     text: "Seamless installation and expert design to support the flow and function of every custom build.",
-    image: images.hvac,
+    image: "/images/home/011-AG8ngQWDtn_LXyB1Q3qBTkCaXoxS.jpg",
   },
   {
     slug: "hvac",
     name: "HVAC",
     text: "Efficient, reliable climate systems designed for year-round comfort. Expert installation and service that ensure performance, longevity, and peace of mind.",
-    image: images.hvac,
+    image: "/images/home/002-AG8ngQUaKOwqHCj9dRYgkQwAuysT.jpg",
   },
   {
     slug: "electrical",
     name: "Electrical",
     text: "Modern, safe, and efficient electrical solutions tailored to today's homes and smart systems.",
-    image: images.hvac,
+    image: "/images/home/047-AG8ngQVn8Uu2AV8Vzqhp3C6-nn4O.jpg",
   },
   {
     slug: "drywall",
     name: "Drywall",
     text: "Flawless surfaces and clean finishes that prepare each space for color, texture, and style.",
-    image: images.finish,
+    image: "/images/home/080-AG8ngQUnDiKZokqmv-J3cShQPYxy.jpg",
   },
   {
     slug: "painting",
     name: "Painting",
     text: "Premium finishes that enhance every room, from soft neutrals to bold statements.",
-    image: images.kitchenWarm,
+    image: "/images/home/005-AG8ngQWhe4qNEUOYZnxZLXwW97v9.jpg",
   },
   {
     slug: "flooring",
     name: "Flooring",
     text: "Durable and refined flooring installations that bring warmth, character, and lasting beauty to your home.",
-    image: images.kitchenWarm,
+    image: "/images/home/008-AG8ngQU9pu8hxsv4GHVhlrOfrZc6.jpg",
   },
   {
     slug: "cabinets",
     name: "Cabinets & closets",
     text: "Custom-built storage solutions designed for both beauty and function, from handcrafted cabinetry to elegant, tailored closet systems that elevate everyday living.",
-    image: images.heroKitchen,
+    image: "/images/home/006-AG8ngQV9BM83zzIWY3Z1xptfpr8H.jpg",
   },
   {
     slug: "tile",
     name: "Tile",
     text: "Detailed tile work that adds depth, texture, and luxury to kitchens, baths, and living spaces.",
-    image: images.bathroomTwo,
+    image: "/images/home/013-AG8ngQWK6jvSylFbMDm5lWRXvjEN.jpg",
   },
   {
     slug: "welding",
     name: "Welding",
     text: "High-quality, precise welding for both decorative and structural applications, built for strength and style.",
-    image: images.finish,
+    image: "/images/home/162-AG8ngQX_BUv1dF-F7U0Tgv9wV0tH.jpg",
   },
 ];
+
+export const homeHomes = customHomes.homes.filter(
+  (home) => home.image !== images.hero && home.image !== services[0].image,
+);
+
+export const reservedImages = new Set([
+  images.hero,
+  images.aboutKitchen,
+  images.aboutBuild,
+  images.bandOne,
+  images.bandTwo,
+  images.bandThree,
+  images.standardWork,
+  ...services.map((s) => s.image),
+]);
 
 export const testimonials = [
   "Belloz did a good job with what they had and was thorough and detail oriented. The crew was nice and great too!",

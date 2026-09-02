@@ -46,15 +46,15 @@ export function Contact() {
           <h2 className="text-3xl text-navy">Send a message</h2>
           <label className="mt-6 block text-sm text-stone">
             Name
-            <input name="name" required className="mt-2 w-full rounded-2xl border border-black/10 px-4 py-3 text-navy" />
+            <input name="name" required className="mt-2 w-full rounded-2xl border border-black/10 bg-[#f7f4ef] px-4 py-3 text-navy outline-none focus:border-gold" />
           </label>
           <label className="mt-4 block text-sm text-stone">
             Email
-            <input name="email" type="email" required className="mt-2 w-full rounded-2xl border border-black/10 px-4 py-3 text-navy" />
+            <input name="email" type="email" required className="mt-2 w-full rounded-2xl border border-black/10 bg-[#f7f4ef] px-4 py-3 text-navy outline-none focus:border-gold" />
           </label>
           <label className="mt-4 block text-sm text-stone">
             How can we help?
-            <textarea name="message" required rows={5} className="mt-2 w-full rounded-2xl border border-black/10 px-4 py-3 text-navy" />
+            <textarea name="message" required rows={5} className="mt-2 w-full rounded-2xl border border-black/10 bg-[#f7f4ef] px-4 py-3 text-navy outline-none focus:border-gold" />
           </label>
           <button type="submit" className="btn btn-navy mt-6 w-full">
             Open email to {company.email}

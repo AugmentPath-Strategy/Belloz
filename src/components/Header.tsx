@@ -63,9 +63,10 @@ export function Header() {
             <button
               className="rounded-full border border-navy/15 px-4 py-2 text-sm text-navy lg:hidden"
               onClick={() => setOpen((v) => !v)}
-              aria-label="Open menu"
+              aria-expanded={open}
+              aria-label={open ? "Close menu" : "Open menu"}
             >
-              Menu
+              {open ? "Close" : "Menu"}
             </button>
           </div>
         </div>

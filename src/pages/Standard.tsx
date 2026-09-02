@@ -48,7 +48,7 @@ export function Standard() {
           ))}
         </div>
         <p className="mt-10 max-w-2xl text-2xl text-navy">{story.closer}</p>
-        <img src={images.finish} alt="" className="mt-10 h-80 w-full rounded-3xl object-cover" />
+        <img src={images.standardWork} alt="Bathroom finish by Belloz Construction" className="mt-10 h-80 w-full rounded-3xl object-cover" />
       </section>
     </div>
   );
