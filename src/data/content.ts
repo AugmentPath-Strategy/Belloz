@@ -236,6 +236,34 @@ export const testimonials = [
     location: "Cedar Park, TX",
     project: "Bathroom remodel",
   },
+  {
+    quote: "We knew the schedule would be tight. They still showed up, kept us in the loop, and the finish work looks better than we planned for.",
+    name: "Andre Morales",
+    handle: "@andremorales",
+    location: "Leander, TX",
+    project: "Kitchen remodel",
+  },
+  {
+    quote: "From framing to paint, it felt like one team. No finger-pointing between trades. That alone was worth it.",
+    name: "Hannah Brooks",
+    handle: "@hbrooks",
+    location: "Lakeway, TX",
+    project: "Custom home",
+  },
+  {
+    quote: "Honest about cost, honest about timeline. The tile and cabinets came out exactly how we sketched them.",
+    name: "Chris Patel",
+    handle: "@cpatel",
+    location: "Pflugerville, TX",
+    project: "Bath remodel",
+  },
+  {
+    quote: "Our lot needed a lot of prep before anything else. They handled clearing and concrete without drama, then kept moving.",
+    name: "Sofia Ramirez",
+    handle: "@sofiaramirez",
+    location: "Kyle, TX",
+    project: "Site work",
+  },
 ];
 
 export const serviceAreas = [

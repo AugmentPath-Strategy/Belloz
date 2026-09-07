@@ -1,23 +1,50 @@
 import { useState, type FormEvent } from "react";
-import { company, projectTypes } from "../data/content";
+import { projectTypes } from "../data/content";
 
 type Props = {
   heading?: string;
 };
 
+const webhook = import.meta.env.VITE_SHEETS_WEBHOOK_URL;
+
 export function EstimateForm({ heading = "Request a free estimate" }: Props) {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+  const [pending, setPending] = useState(false);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const name = String(data.get("name") || "");
-    const phone = String(data.get("phone") || "");
-    const type = String(data.get("type") || "");
-    const message = String(data.get("message") || "");
-    const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nProject: ${type}\n\n${message}`);
-    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent("Free estimate request")}&body=${body}`;
-    setSent(true);
+    setError("");
+    setSent(false);
+    if (!webhook) {
+      setError("Estimate webhook is not configured.");
+      return;
+    }
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") || ""),
+      phone: String(data.get("phone") || ""),
+      type: String(data.get("type") || ""),
+      message: String(data.get("message") || ""),
+    };
+
+    setPending(true);
+    try {
+      await fetch(webhook, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      setSent(true);
+      form.reset();
+    } catch {
+      setError("Could not send the estimate. Try again or call us.");
+    } finally {
+      setPending(false);
+    }
   }
 
   return (
@@ -49,10 +76,11 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
         Project details
         <textarea name="message" required rows={4} className="field" placeholder="Location, timeline, and what you want built." />
       </label>
-      <button type="submit" className="btn btn-gold mt-6 w-full">
-        Get a free estimate
+      <button type="submit" className="btn btn-gold mt-6 w-full" disabled={pending}>
+        {pending ? "Sending…" : "Get a free estimate"}
       </button>
-      {sent && <p className="mt-3 text-sm text-stone">Your email app should open with the request ready to send.</p>}
+      {sent && <p className="mt-3 text-sm text-stone">Request sent. We will call you back.</p>}
+      {error && <p className="mt-3 text-sm text-stone">{error}</p>}
     </form>
   );
 }

@@ -6,3 +6,5 @@ content/verify
 public/images/_t*.jpg
 public/images/_tcookie.jpg
 .DS_Store
+.env
+.env.local
