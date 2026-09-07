@@ -1,5 +1,6 @@
 import { PageHero } from "../components/PageHero";
-import { founder, images, story, testimonials, values } from "../data/content";
+import { TestimonialWall } from "../components/TestimonialWall";
+import { founder, images, story, values } from "../data/content";
 
 export function Standard() {
   return (
@@ -40,16 +41,7 @@ export function Standard() {
 
       <section className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-4xl text-navy md:text-5xl">What our clients say</h2>
-        <div className="mt-10 space-y-4">
-          {testimonials.map((item) => (
-            <blockquote key={item.quote} className="rounded-3xl bg-white p-7 text-lg text-stone">
-              "{item.quote}"
-              <footer className="mt-4 text-sm text-navy">
-                {item.name} · {item.project}
-              </footer>
-            </blockquote>
-          ))}
-        </div>
+        <TestimonialWall />
         <p className="mt-10 max-w-2xl text-2xl text-navy">{story.closer}</p>
         <img src={images.standardWork} alt="Bathroom finish by Belloz Construction" className="mt-10 h-80 w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
       </section>

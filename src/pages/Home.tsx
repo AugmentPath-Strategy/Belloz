@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { EstimateForm } from "../components/EstimateForm";
+import { TestimonialWall } from "../components/TestimonialWall";
 import {
   company,
   customHomes,
@@ -9,7 +10,6 @@ import {
   serviceAreas,
   services,
   story,
-  testimonials,
   values,
 } from "../data/content";
 
@@ -193,20 +193,7 @@ export function Home() {
         <div className="wrap">
           <p className="label text-gold-deep">Reviews</p>
           <h2 className="mt-3 text-4xl text-navy md:text-5xl">What clients say</h2>
-          <p className="mt-3 text-sm text-stone">Names and cities are placeholders until we add attributed reviews.</p>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {testimonials.map((item) => (
-              <blockquote key={item.quote} className="card flex flex-col p-8">
-                <p className="text-lg text-stone">"{item.quote}"</p>
-                <footer className="mt-6 text-sm text-navy">
-                  <cite className="not-italic font-semibold">{item.name}</cite>
-                  <span className="block text-stone">
-                    {item.project} · {item.location}
-                  </span>
-                </footer>
-              </blockquote>
-            ))}
-          </div>
+          <TestimonialWall />
         </div>
       </section>
 
