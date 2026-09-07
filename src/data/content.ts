@@ -98,6 +98,12 @@ export const services = [
     image: "/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg",
   },
   {
+    slug: "full-remodels",
+    name: "Full remodels",
+    text: "Whole-house work, not just one room. Tear-out through the last coat, same crew.",
+    image: "/images/homes/005-AG8ngQWe6HPfSMkRd0XcB9Emd75l.jpg",
+  },
+  {
     slug: "kitchens",
     name: "Kitchen & bath remodels",
     text: "Kitchens and baths you use every day. Layout, cabinets, tile, and the mess in between.",

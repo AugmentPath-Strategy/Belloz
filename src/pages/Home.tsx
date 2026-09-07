@@ -111,7 +111,7 @@ export function Home() {
             <div className="max-w-2xl">
               <p className="label text-gold-deep">Services</p>
               <h2 className="mt-3 text-4xl text-navy md:text-5xl">What we do</h2>
-              <p className="mt-4 text-stone">Kitchens, baths, new homes, and the trades in between. We stay on the job.</p>
+              <p className="mt-4 text-stone">New homes, full remodels, kitchen and bath work, and the trades in between. We stay on the job.</p>
             </div>
             <Link to="/work" className="hidden text-sm font-semibold text-navy underline decoration-gold underline-offset-4 md:block">
               All services
