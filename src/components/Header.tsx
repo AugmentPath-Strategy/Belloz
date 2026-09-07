@@ -8,12 +8,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f4ef]/95 backdrop-blur-md">
-      <div className="wrap flex h-[72px] items-center justify-between">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={images.logo} alt="Belloz Construction" className="h-11 w-11 rounded object-cover" />
-          <span className="leading-none">
-            <span className="block font-display text-[1.65rem] text-navy">Belloz</span>
-            <span className="label mt-1 block text-stone">Construction</span>
+      <div className="wrap flex h-[72px] items-center justify-between gap-3">
+        <Link to="/" className="flex shrink-0 items-center gap-2 sm:gap-3" onClick={() => setOpen(false)}>
+          <img src={images.logo} alt="Belloz Construction" className="h-11 w-11 shrink-0 rounded object-cover" />
+          <span className="shrink-0 leading-none">
+            <span className="block font-display text-[1.5rem] text-navy sm:text-[1.65rem]">Belloz</span>
+            <span className="mt-1 block whitespace-nowrap text-[0.68rem] font-semibold uppercase tracking-[0.06em] text-stone">
+              Construction
+            </span>
           </span>
         </Link>
 
@@ -35,17 +37,25 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a href={phone.href} className="btn btn-gold hidden md:inline-flex">
+        <div className="flex shrink-0 items-center gap-3">
+          <a href={phone.href} className="btn btn-gold hidden lg:inline-flex">
             Call now
           </a>
           <button
-            className="rounded-full border border-navy/15 px-4 py-2 text-sm text-navy lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
           >
-            {open ? "Close" : "Menu"}
+            {open ? (
+              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                <path d="M5 8h14M5 12h14M5 16h14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            )}
           </button>
         </div>
       </div>
@@ -61,9 +71,6 @@ export function Header() {
             <Link to="/#estimate" onClick={() => setOpen(false)} className="btn btn-navy mt-2">
               Get a free estimate
             </Link>
-            <a href={phone.href} className="btn btn-gold">
-              Call now
-            </a>
           </nav>
         </div>
       )}

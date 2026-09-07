@@ -38,9 +38,12 @@ export function Home() {
           <p className="label text-gold">Foundation to finish in {company.region}</p>
           <h1 className="mt-5 max-w-3xl text-5xl md:text-7xl">Custom homes and remodels built to last.</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
-            Same crew from the pour to the last coat of paint. Tell us about the job and we will come look at it.
+            Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
           </p>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <a href={phone.href} className="mt-6 inline-block font-display text-3xl text-gold hover:text-white md:text-4xl">
+            {phone.display}
+          </a>
+          <div className="mt-8 flex flex-wrap gap-3">
             <a href="#estimate" className="btn btn-gold">
               Get a free estimate
             </a>
