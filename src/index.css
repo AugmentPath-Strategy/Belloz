@@ -95,11 +95,51 @@ h3,
   background: transparent;
 }
 
+.btn-line-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.wrap {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(16, 32, 51, 0.04);
+}
+
+.field {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f7f4ef;
+  padding: 0.75rem 1rem;
+  color: var(--color-navy);
+  outline: none;
+}
+
+.field:focus {
+  border-color: var(--color-gold);
+}
+
 .page-pad {
   padding-bottom: 5.5rem;
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding-block: 6rem;
+  }
+
   .page-pad {
     padding-bottom: 0;
   }

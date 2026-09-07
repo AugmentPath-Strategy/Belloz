@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { company, images, nav, services } from "../data/content";
+import { company, images, nav } from "../data/content";
 
 export function Footer() {
   return (
     <footer className="bg-navy text-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
+      <div className="wrap grid gap-12 py-16 md:grid-cols-4">
         <div>
           <img src={images.logo} alt="Belloz Construction" className="mb-4 h-12 w-12 rounded object-cover" />
           <p className="font-display text-[2rem]">Belloz Construction</p>
@@ -14,7 +14,10 @@ export function Footer() {
         </div>
         <div>
           <p className="label mb-4 text-gold">Explore</p>
-          <div className="flex flex-col gap-2 text-sm text-white/75">
+          <nav className="flex flex-col gap-2 text-sm text-white/75">
+            <Link to="/" className="hover:text-gold">
+              Home
+            </Link>
             {nav.map((item) => (
               <Link key={item.to} to={item.to} className="hover:text-gold">
                 {item.label}
@@ -23,20 +26,10 @@ export function Footer() {
             <Link to="/terms" className="hover:text-gold">
               Terms
             </Link>
-          </div>
+          </nav>
         </div>
         <div>
-          <p className="label mb-4 text-gold">Services</p>
-          <div className="flex flex-col gap-2 text-sm text-white/75">
-            {services.slice(0, 6).map((s) => (
-              <Link key={s.slug} to={`/work#${s.slug}`} className="hover:text-gold">
-                {s.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="label mb-4 text-gold">Talk with us</p>
+          <p className="label mb-4 text-gold">Contact</p>
           <div className="flex flex-col gap-2 text-sm text-white/75">
             {company.phones.map((p) => (
               <a key={p.display} href={p.href} className="hover:text-gold">
@@ -46,6 +39,24 @@ export function Footer() {
             <a href={`mailto:${company.email}`} className="hover:text-gold">
               {company.email}
             </a>
+            <p>
+              {company.location}
+              <br />
+              Serving {company.region}
+            </p>
+          </div>
+        </div>
+        <div>
+          <p className="label mb-4 text-gold">Follow</p>
+          <div className="flex flex-col gap-2 text-sm text-white/75">
+            {company.socials.map((s) => (
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="hover:text-gold">
+                {s.label}
+              </a>
+            ))}
+            <Link to="/#estimate" className="btn btn-gold mt-4 w-fit">
+              Get a free estimate
+            </Link>
           </div>
         </div>
       </div>

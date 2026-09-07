@@ -15,8 +15,13 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
-    if (!location.hash) window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
-  }, [location.pathname]);
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }));
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="min-h-screen bg-[#f7f4ef]">

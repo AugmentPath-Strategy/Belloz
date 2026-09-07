@@ -41,9 +41,12 @@ export function Standard() {
       <section className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-4xl text-navy md:text-5xl">What our clients say</h2>
         <div className="mt-10 space-y-4">
-          {testimonials.map((quote) => (
-            <blockquote key={quote} className="rounded-3xl bg-white p-7 text-lg text-stone">
-              "{quote}"
+          {testimonials.map((item) => (
+            <blockquote key={item.quote} className="rounded-3xl bg-white p-7 text-lg text-stone">
+              "{item.quote}"
+              <footer className="mt-4 text-sm text-navy">
+                {item.name} · {item.project}
+              </footer>
             </blockquote>
           ))}
         </div>

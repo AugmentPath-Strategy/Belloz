@@ -11,6 +11,7 @@ export const company = {
     { label: "Instagram", href: "https://www.instagram.com/belloz.construction" },
   ],
   region: "Central Texas",
+  location: "Austin, TX",
 };
 
 export const founder = {
@@ -22,7 +23,7 @@ export const founder = {
 
 export const images = {
   logo: "/images/home/001-AG8ngQVAkFE_BcjXDN2-gqzjMGpU.jpg",
-  hero: "/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg",
+  hero: "/images/homes/002-AG8ngQVOVghTV0QYeqtGXM8bjU0C.jpg",
   aboutKitchen: "/images/home/004-AG8ngQXKWxj6PiS62lfIOfdxPuU0.jpg",
   aboutBuild: "/images/home/050-AG8ngQWa1VKoowenl8g7BaWbLeiE.jpg",
   bandOne: "/images/home/015-AG8ngQXtGVo3Gj0F0rJ1cwJiqCvD.jpg",
@@ -200,17 +201,69 @@ export const reservedImages = new Set([
 ]);
 
 export const testimonials = [
-  "Belloz did a good job with what they had and was thorough and detail oriented. The crew was nice and great too!",
-  "They communicated clearly, and went above and beyond to ensure everything was handled thoroughly and thoughtfully, all with a positive attitude!",
-  "Belloz Construction did an amazing job on our kitchen remodel. Professional, fast, and top quality.",
-  "They consistently demonstrated a strong work ethic during our home build, always showed up on time and went the extra mile to ensure each step was completed smoothly.",
-  "Enrique and his crew were awesome to work with. They really care about their work and their customers. They finished our bathroom remodel exactly how we wanted. We're so happy with the results.",
+  {
+    quote: "Belloz did a good job with what they had and was thorough and detail oriented. The crew was nice and great too!",
+    name: "Client name",
+    location: "Central Texas",
+    project: "Remodel",
+    placeholder: true,
+  },
+  {
+    quote: "They communicated clearly, and went above and beyond to ensure everything was handled thoroughly and thoughtfully, all with a positive attitude!",
+    name: "Client name",
+    location: "Austin, TX",
+    project: "Home build",
+    placeholder: true,
+  },
+  {
+    quote: "Belloz Construction did an amazing job on our kitchen remodel. Professional, fast, and top quality.",
+    name: "Client name",
+    location: "Round Rock, TX",
+    project: "Kitchen remodel",
+    placeholder: true,
+  },
+  {
+    quote: "They consistently demonstrated a strong work ethic during our home build, always showed up on time and went the extra mile to ensure each step was completed smoothly.",
+    name: "Client name",
+    location: "Georgetown, TX",
+    project: "Custom home",
+    placeholder: true,
+  },
+  {
+    quote: "Enrique and his crew were awesome to work with. They really care about their work and their customers. They finished our bathroom remodel exactly how we wanted. We're so happy with the results.",
+    name: "Client name",
+    location: "Cedar Park, TX",
+    project: "Bathroom remodel",
+    placeholder: true,
+  },
+];
+
+export const serviceAreas = [
+  "Austin",
+  "Round Rock",
+  "Georgetown",
+  "Cedar Park",
+  "Leander",
+  "Pflugerville",
+  "Kyle",
+  "Buda",
+  "Dripping Springs",
+  "Lakeway",
+  "Bee Cave",
+  "San Marcos",
+];
+
+export const projectTypes = [
+  "Custom home",
+  "Kitchen remodel",
+  "Bath remodel",
+  "Full remodel",
+  "Other",
 ];
 
 export const nav = [
-  { to: "/", label: "Home" },
   { to: "/work", label: "Work" },
   { to: "/homes", label: "Homes" },
-  { to: "/standard", label: "The Standard" },
-  { to: "/contact", label: "Contact" },
+  { to: "/standard", label: "About" },
+  { to: "/contact", label: "Estimate" },
 ];

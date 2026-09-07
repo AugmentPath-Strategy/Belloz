@@ -75,7 +75,7 @@ export const pages: SeoPage[] = [
     path: "/contact",
     title: "Speak With Belloz Construction | Call or Text Today",
     description:
-      "Call, text, or email Belloz Construction LLC in Central Texas to discuss a custom home or remodel. Share project details and the team will take it from there.",
+      "Request a free estimate from Belloz Construction LLC. Call, text, or send four fields about your Central Texas custom home or remodel and we will follow up.",
     ogType: "website",
     schemaType: "ContactPage",
     breadcrumb: "Contact",
