@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div>
-          <img src={images.logo} alt="" className="mb-4 h-12 w-12 rounded object-cover" />
+          <img src={images.logo} alt="Belloz Construction" className="mb-4 h-12 w-12 rounded object-cover" />
           <p className="font-display text-[2rem]">Belloz Construction</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/65">
             Custom homes and remodeling from foundation to finish across {company.region}.

@@ -56,7 +56,7 @@ export function Work() {
             <article key={s.slug} id={s.slug} className="scroll-mt-52 overflow-hidden rounded-3xl bg-white md:scroll-mt-60">
               <button type="button" className="group block w-full text-left" onClick={() => setOpen(s.image)}>
                 <div className="aspect-[16/10] overflow-hidden">
-                  <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                  <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy" decoding="async" />
                 </div>
                 <div className="p-6">
                   <h2 className="text-3xl text-navy">{s.name}</h2>
@@ -75,9 +75,9 @@ export function Work() {
             These images are from the Belloz Construction galleries: kitchens, baths, site work, and finishes across Central Texas.
           </p>
           <div className="mt-8 columns-2 gap-3 md:columns-3 lg:columns-4">
-            {gallery.map((src) => (
+            {gallery.map((src, i) => (
               <button key={src} type="button" className="mb-3 block w-full overflow-hidden rounded-2xl" onClick={() => setOpen(src)}>
-                <img src={src} alt="" className="w-full object-cover" loading="lazy" />
+                <img src={src} alt={`Belloz Construction project photo ${i + 1}`} className="w-full object-cover" loading="lazy" decoding="async" />
               </button>
             ))}
           </div>

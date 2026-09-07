@@ -1,0 +1,5 @@
+# TODO: after TLS is live, enforce HTTPS at the host (CDN/nginx/Netlify). Do not hardcode a domain redirect here.
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml

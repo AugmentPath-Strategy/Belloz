@@ -21,7 +21,7 @@ export function Homes() {
           {customHomes.homes.map((home) => (
             <button key={home.name} type="button" className="group text-left" onClick={() => setOpen(home.image)}>
               <div className="overflow-hidden rounded-3xl">
-                <img src={home.image} alt={home.name} className="h-[360px] w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[420px]" />
+                <img src={home.image} alt={home.name} className="h-[360px] w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[420px]" loading="lazy" decoding="async" />
               </div>
               <h2 className="mt-4 text-3xl text-navy">{home.name}</h2>
             </button>

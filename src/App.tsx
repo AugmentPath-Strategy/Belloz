@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { MobileDock } from "./components/MobileDock";
+import { Seo } from "./seo/Seo";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { Homes } from "./pages/Homes";
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f7f4ef]">
+      <Seo pathname={location.pathname} />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

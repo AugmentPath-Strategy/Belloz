@@ -67,7 +67,7 @@ export function Home() {
               }`}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <img src={s.image} alt={s.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy" decoding="async" />
               </div>
               <div className="p-6">
                 <h3 className="text-3xl">{s.name}</h3>
@@ -92,6 +92,8 @@ export function Home() {
                 src={images.aboutKitchen}
                 alt="Kitchen built by Belloz Construction"
                 className="h-full w-full rounded-3xl object-cover [grid-area:1/1/3/2]"
+                loading="lazy"
+                decoding="async"
               />
               <div className="flex h-full flex-col justify-center rounded-3xl bg-navy px-5 py-4 text-white [grid-area:1/2/2/3]">
                 <p className="font-display text-5xl leading-none">15+</p>
@@ -101,6 +103,8 @@ export function Home() {
                 src={images.aboutBuild}
                 alt="Home framing by Belloz Construction"
                 className="h-full w-full rounded-3xl object-cover [grid-area:2/2/3/3]"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -143,7 +147,7 @@ export function Home() {
           {homeHomes.map((home) => (
             <Link key={home.name} to="/homes" className="group">
               <div className="overflow-hidden rounded-3xl">
-                <img src={home.image} alt={home.name} className="h-80 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[26rem]" />
+                <img src={home.image} alt={home.name} className="h-80 w-full object-cover transition duration-500 group-hover:scale-[1.03] md:h-[26rem]" loading="lazy" decoding="async" />
               </div>
               <p className="mt-3 text-2xl text-navy">{home.name}</p>
             </Link>
@@ -170,9 +174,9 @@ export function Home() {
           </div>
         </div>
         <div className="mx-auto grid max-w-7xl gap-4 px-6 pb-24 md:grid-cols-3 md:pb-28">
-          <img src={images.bandOne} alt="Finish work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
-          <img src={images.bandTwo} alt="Framing crew by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
-          <img src={images.bandThree} alt="Tile work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" />
+          <img src={images.bandOne} alt="Finish work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" loading="lazy" decoding="async" />
+          <img src={images.bandTwo} alt="Framing crew by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" loading="lazy" decoding="async" />
+          <img src={images.bandThree} alt="Tile work by Belloz Construction" className="h-72 w-full rounded-3xl object-cover md:h-96" loading="lazy" decoding="async" />
         </div>
       </section>
 
