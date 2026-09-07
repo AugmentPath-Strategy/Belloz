@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { company, images, nav } from "../data/content";
+import { images, nav } from "../data/content";
+import { CallMenu } from "./CallMenu";
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const phone = company.phones[0];
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f4ef]/95 backdrop-blur-md">
@@ -38,9 +38,7 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-3">
-          <a href={phone.href} className="btn btn-gold hidden lg:inline-flex">
-            Call now
-          </a>
+          <CallMenu className="hidden lg:block" />
           <button
             className="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy lg:hidden"
             onClick={() => setOpen((v) => !v)}

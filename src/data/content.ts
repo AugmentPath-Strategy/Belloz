@@ -3,9 +3,8 @@ export const company = {
   shortName: "Belloz",
   email: "bellozconstruction@gmail.com",
   phones: [
-    { label: "Call or text", display: "(512) 202-0459", href: "tel:+15122020459", sms: "sms:+15122020459" },
-    { label: "Call or text", display: "(512) 563-3244", href: "tel:+15125633244", sms: "sms:+15125633244" },
-    { label: "Office", display: "(512) 733-3097", href: "tel:+15127333097" },
+    { name: "Manuel", label: "Call Manuel", display: "(512) 733-3097", href: "tel:+15127333097" },
+    { name: "Enrique", label: "Call Enrique", display: "(512) 202-0459", href: "tel:+15122020459", sms: "sms:+15122020459" },
   ],
   socials: [
     { label: "Facebook", href: "https://www.facebook.com/bellozconstruction" },
@@ -107,6 +106,12 @@ export const services = [
     name: "Kitchen & bath remodels",
     text: "Kitchens and baths you use every day. Layout, cabinets, tile, and the mess in between.",
     image: "/images/home/003-AG8ngQWpqpfs1dlTZjJXiIeaTOFq.jpg",
+  },
+  {
+    slug: "garage-floors",
+    name: "Garage floors",
+    text: "Epoxy garage floors that take cars, heat, and a hose. Clean coat, tight edges.",
+    image: "/images/home/163-garage-epoxy.png",
   },
   {
     slug: "bathrooms",

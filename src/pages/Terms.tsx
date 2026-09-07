@@ -45,8 +45,6 @@ const sections = [
 ];
 
 export function Terms() {
-  const phone = company.phones[0];
-
   return (
     <div className="page-pad">
       <section className="bg-navy px-6 py-16 text-white md:py-20">
@@ -107,12 +105,13 @@ export function Terms() {
           </article>
         </div>
 
-        <a
-          href={phone.href}
-          className="btn btn-navy mt-12"
-        >
-          Call {phone.display}
-        </a>
+        <div className="mt-12 flex flex-wrap gap-3">
+          {company.phones.map((p) => (
+            <a key={p.href} href={p.href} className="btn btn-navy">
+              {p.label}
+            </a>
+          ))}
+        </div>
       </section>
     </div>
   );

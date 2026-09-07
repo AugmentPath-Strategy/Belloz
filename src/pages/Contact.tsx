@@ -3,8 +3,6 @@ import { EstimateForm } from "../components/EstimateForm";
 import { company } from "../data/content";
 
 export function Contact() {
-  const phone = company.phones[0];
-
   return (
     <div className="page-pad">
       <PageHero
@@ -25,9 +23,13 @@ export function Contact() {
             <p className="label text-gold-deep">Email</p>
             <p className="mt-2 font-display text-3xl text-navy">{company.email}</p>
           </a>
-          <a href={phone.href} className="btn btn-gold">
-            Call now
-          </a>
+          <div className="flex flex-wrap gap-3">
+            {company.phones.map((p) => (
+              <a key={p.href} href={p.href} className="btn btn-gold">
+                {p.label}
+              </a>
+            ))}
+          </div>
         </div>
         <EstimateForm />
       </section>

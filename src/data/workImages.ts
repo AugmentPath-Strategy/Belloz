@@ -1,4 +1,6 @@
 export const workImages = [
+  "/images/home/163-garage-epoxy.png",
+  "/images/home/164-garage-epoxy-entry.png",
   "/images/home/002-AG8ngQUaKOwqHCj9dRYgkQwAuysT.jpg",
   "/images/home/003-AG8ngQWpqpfs1dlTZjJXiIeaTOFq.jpg",
   "/images/home/004-AG8ngQXKWxj6PiS62lfIOfdxPuU0.jpg",

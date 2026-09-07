@@ -14,7 +14,6 @@ import {
 } from "../data/content";
 
 export function Home() {
-  const phone = company.phones[0];
   const featuredServices = services.slice(0, 6);
   const recentProjects = customHomes.homes.slice(0, 4);
   const location = useLocation();
@@ -36,20 +35,30 @@ export function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.78)_0%,rgba(16,32,51,0.42)_52%,rgba(16,32,51,0.12)_100%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-6 pb-20 pt-28 md:justify-center md:pb-28">
           <p className="label text-gold">Foundation to finish in {company.region}</p>
-          <h1 className="mt-5 max-w-3xl text-5xl md:text-7xl">Custom homes and remodels built to last.</h1>
+          <h1 className="mt-5 max-w-3xl text-5xl uppercase md:text-7xl">Custom Homes and Remodels Built to Last.</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
             Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
           </p>
-          <a href={phone.href} className="mt-6 inline-block font-display text-3xl text-gold hover:text-white md:text-4xl">
-            {phone.display}
-          </a>
+          <div className="mt-6 flex flex-col gap-1">
+            {company.phones.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                className="inline-block font-display text-3xl text-gold hover:text-white md:text-4xl"
+              >
+                {p.display}
+              </a>
+            ))}
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#estimate" className="btn btn-gold">
               Get a free estimate
             </a>
-            <a href={phone.href} className="btn btn-line btn-line-light text-white">
-              Call now
-            </a>
+            {company.phones.map((p) => (
+              <a key={p.href} href={p.href} className="btn btn-line btn-line-light text-white">
+                {p.label}
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -196,9 +205,13 @@ export function Home() {
             <p className="label text-gold-deep">Free estimate</p>
             <h2 className="mt-3 text-4xl text-navy md:text-5xl">Tell us about the job</h2>
             <p className="mt-4 text-stone">Call, text, or use the form. We will call you back.</p>
-            <a href={phone.href} className="mt-8 block font-display text-4xl text-navy hover:text-gold-deep">
-              {phone.display}
-            </a>
+            <div className="mt-8 flex flex-col gap-2">
+              {company.phones.map((p) => (
+                <a key={p.href} href={p.href} className="block font-display text-4xl text-navy hover:text-gold-deep">
+                  {p.display}
+                </a>
+              ))}
+            </div>
             <a href={`mailto:${company.email}`} className="mt-3 block text-stone hover:text-navy">
               {company.email}
             </a>
