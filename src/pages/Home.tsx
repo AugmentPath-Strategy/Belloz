@@ -30,15 +30,15 @@ export function Home() {
       <section className="relative min-h-[100svh] overflow-hidden bg-navy text-white">
         <img
           src={images.hero}
-          alt="The Enclave Gate Modern, a custom home built by Belloz Construction"
-          className="absolute inset-0 h-full w-full object-cover"
+          alt="The Twin Oaks Farmhouse, a custom home built by Belloz Construction"
+          className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.78)_0%,rgba(16,32,51,0.42)_52%,rgba(16,32,51,0.12)_100%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-6 pb-20 pt-28 md:justify-center md:pb-28">
           <p className="label text-gold">Foundation to finish in {company.region}</p>
           <h1 className="mt-5 max-w-3xl text-5xl md:text-7xl">Custom homes and remodels built to last.</h1>
-          <p className="mt-7 max-w-xl text-lg text-white/80">
-            Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
+          <p className="mt-7 max-w-2xl text-lg text-white/80">
+            Expert construction, from start to finish. Belloz Construction handles new home builds, complete remodels, and premium kitchen and bath renovations. We seamlessly coordinate the trades and stay dedicated to your job site to ensure flawless execution every step of the way.
           </p>
           <a href={phone.href} className="mt-6 inline-block font-display text-3xl text-gold hover:text-white md:text-4xl">
             {phone.display}

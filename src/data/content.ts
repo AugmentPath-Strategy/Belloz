@@ -23,7 +23,7 @@ export const founder = {
 
 export const images = {
   logo: "/images/home/001-AG8ngQVAkFE_BcjXDN2-gqzjMGpU.jpg",
-  hero: "/images/homes/002-AG8ngQVOVghTV0QYeqtGXM8bjU0C.jpg",
+  hero: "/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg",
   aboutKitchen: "/images/home/004-AG8ngQXKWxj6PiS62lfIOfdxPuU0.jpg",
   aboutBuild: "/images/home/050-AG8ngQWa1VKoowenl8g7BaWbLeiE.jpg",
   bandOne: "/images/home/015-AG8ngQXtGVo3Gj0F0rJ1cwJiqCvD.jpg",
@@ -58,7 +58,6 @@ export const customHomes = {
     "A few of the homes are below. Ask if you want to talk through one of them.",
   ],
   homes: [
-    { name: "The Enclave Gate Modern", image: "/images/homes/002-AG8ngQVOVghTV0QYeqtGXM8bjU0C.jpg" },
     { name: "The Twin Oaks Farmhouse", image: "/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg" },
     { name: "The Blackwood Residence", image: "/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg" },
     { name: "The White Gable House", image: "/images/homes/005-AG8ngQWe6HPfSMkRd0XcB9Emd75l.jpg" },
