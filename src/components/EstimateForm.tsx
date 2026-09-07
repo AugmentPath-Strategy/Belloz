@@ -50,7 +50,7 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
   return (
     <form onSubmit={onSubmit} className="card p-8">
       <h2 className="text-3xl text-navy">{heading}</h2>
-      <p className="mt-2 text-stone">Four fields. We will follow up by phone.</p>
+      <p className="mt-2 text-stone">Name, phone, what you need. We call you back.</p>
       <label className="mt-6 block text-sm font-medium text-navy">
         Name
         <input name="name" required autoComplete="name" className="field" />

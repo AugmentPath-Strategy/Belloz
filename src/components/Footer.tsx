@@ -9,7 +9,7 @@ export function Footer() {
           <img src={images.logo} alt="Belloz Construction" className="mb-4 h-12 w-12 rounded object-cover" />
           <p className="font-display text-[2rem]">Belloz Construction</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/65">
-            Custom homes and remodeling from foundation to finish across {company.region}.
+            Custom homes and remodels in {company.region}. Same crew, start to finish.
           </p>
         </div>
         <div>

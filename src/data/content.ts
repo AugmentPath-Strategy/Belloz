@@ -18,7 +18,6 @@ export const founder = {
   name: "Enrique Bello",
   signOff: "Enrique Belloz",
   title: "Founder & Project Director",
-  photo: "/images/standard/002-AG8ngQWef7Xp63ABkoTyk0MMKmCc.jpg",
 };
 
 export const images = {
@@ -33,31 +32,29 @@ export const images = {
 };
 
 export const story = {
-  eyebrow: "Our story, values, and vision of perfection",
+  eyebrow: "How we got here",
   paragraphs: [
-    "I founded Belloz Construction after spending years watching mediocrity take over an industry that used to stand for pride and precision. I saw builders hiring unskilled crews to cut costs, clients chasing \"luxury\" on the cheapest possible terms, and mistakes left behind with the hope no one would notice. That wasn't good enough for me.",
-    "Belloz Construction was created to raise the bar: to build with integrity, exacting detail, and craftsmanship that speaks for itself. I've handpicked a team of experts who take pride in their work and share my belief that perfection isn't a luxury. It's the standard.",
-    "We build for those who recognize real quality and appreciate the skill, experience, and time it takes to achieve it. If you're looking for a team that values excellence as much as you do, you'll find it here.",
+    "I started Belloz after watching too many jobs go to the cheapest crew. Corners got cut. Nobody owned the mistakes. The client found out later.",
+    "I put together a crew that still cares about the work. We take fewer jobs so we can stay on them, from the slab to the last coat of paint.",
+    "If you want it cheap and gone next week, we are probably not the right fit. If you want it built right, call us.",
   ],
-  closer:
-    "Our work isn't for everyone. It's for those who recognize that true luxury comes from craftsmanship, not shortcuts.",
+  closer: "We are picky about the work we take. That is on purpose.",
 };
 
 export const builtBy = {
   title: "Built By Belloz",
   subtitle: "from foundation to finish",
   intro:
-    "Every project we take on reflects our dedication to quality, precision, and timeless craftsmanship. From the first pour of concrete to the final coat of paint, each phase is handled with care, expertise, and attention to detail.",
-  galleries:
-    "Explore the galleries below to see how we bring custom homes and spaces to life across Central Texas, from new builds to remodels, foundation to finish.",
+    "Same crew on the job from the first pour to the last coat of paint. We do not hand the whole thing off and hope it comes out right.",
+  galleries: "Photos from jobs around Central Texas. New builds, remodels, and the work in between.",
 };
 
 export const customHomes = {
   title: "Custom built homes",
   paragraphs: [
-    "Each Belloz home is a reflection of craftsmanship, care, and thoughtful design. From foundation to finish, every detail is built with precision and purpose, creating spaces that are as beautiful as they are enduring.",
-    "We take pride in bringing our clients' visions to life across Central Texas, combining quality materials, expert construction, and a seamless building experience from start to finish.",
-    "Explore our featured homes below and see the difference that dedication and craftsmanship make.",
+    "These are houses we built. Walk through the photos and you will see how they go together.",
+    "We work with you on the plan, then we stay on the job until it is finished. Central Texas, start to end.",
+    "A few of the homes are below. Ask if you want to talk through one of them.",
   ],
   homes: [
     { name: "The Enclave Gate Modern", image: "/images/homes/002-AG8ngQVOVghTV0QYeqtGXM8bjU0C.jpg" },
@@ -72,23 +69,23 @@ export const customHomes = {
 export const values = [
   {
     title: "Craftsmanship",
-    text: "We believe in building with precision, purpose, and pride, ensuring every detail meets the highest standard of quality.",
+    text: "Straight lines, tight joints, work we are willing to put our name on.",
   },
   {
     title: "Integrity",
-    text: "Trust is the foundation of every project we take on. We stand by our word, our work, and the people we serve.",
+    text: "If we said we would do it, we do it. If something is off, we fix it.",
   },
   {
     title: "Experience",
-    text: "With over 15 years in the industry, our knowledge and expertise guide every phase of construction, from concept to completion.",
+    text: "More than 15 years on jobs like these. We have seen the shortcuts. We do not use them.",
   },
   {
     title: "Collaboration",
-    text: "We value open communication and teamwork, partnering closely with our clients to bring their vision to life.",
+    text: "You hear from us. No guessing where the job stands.",
   },
   {
     title: "Excellence",
-    text: "From foundation to finish, we strive for excellence in craftsmanship, service, and lasting results.",
+    text: "We would rather turn work down than rush a house we cannot stand behind.",
   },
 ];
 
@@ -96,91 +93,91 @@ export const services = [
   {
     slug: "custom-homes",
     name: "Custom home builds",
-    text: "Each Belloz home is a reflection of craftsmanship, care, and thoughtful design, from foundation to finish.",
+    text: "A house built for how you live in it, not a plan pulled off a shelf.",
     image: "/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg",
   },
   {
     slug: "kitchens",
     name: "Kitchen & bath remodels",
-    text: "Sophisticated, functional kitchens designed for modern living, where beauty and practicality meet in every detail.",
+    text: "Kitchens and baths you use every day. Layout, cabinets, tile, and the mess in between.",
     image: "/images/home/003-AG8ngQWpqpfs1dlTZjJXiIeaTOFq.jpg",
   },
   {
     slug: "bathrooms",
     name: "Bathrooms",
-    text: "Elegant and thoughtfully designed custom bathrooms that bring a spa-like feel and lasting comfort to your home.",
+    text: "Bathrooms that hold up. Tile, fixtures, and the waterproofing nobody sees.",
     image: "/images/home/007-AG8ngQXWxVOaw-CqrVMHD6Vw1B4t.jpg",
   },
   {
     slug: "demolition",
     name: "Demolition & lot clearing",
-    text: "Expert site preparation handled safely and efficiently, creating a clean foundation for your next project.",
+    text: "Clear the lot, haul it off, leave you a clean site to build on.",
     image: "/images/home/016-AG8ngQXCbAK7hNmoDU6jWLCJUiRA.jpg",
   },
   {
     slug: "concrete",
     name: "Concrete",
-    text: "Expertly poured and built to last, from solid foundations and decorative flatwork to elegant custom in-ground pools.",
+    text: "Foundations, flatwork, and pools. Poured right the first time.",
     image: "/images/home/019-AG8ngQXis3SSdK6Z10bm7KDW5nyu.jpg",
   },
   {
     slug: "framing",
     name: "Framing",
-    text: "Precision framing that defines the structure and sets the standard for strength, quality, and alignment.",
+    text: "Walls plumb, floors level. The rest of the house depends on this.",
     image: "/images/home/045-AG8ngQXAbI-a5LVZSyIBD1yzT9e3.jpg",
   },
   {
     slug: "plumbing",
     name: "Plumbing",
-    text: "Seamless installation and expert design to support the flow and function of every custom build.",
+    text: "Rough-in and finish plumbing that does not leak and does not get in the way.",
     image: "/images/home/011-AG8ngQWDtn_LXyB1Q3qBTkCaXoxS.jpg",
   },
   {
     slug: "hvac",
     name: "HVAC",
-    text: "Efficient, reliable climate systems designed for year-round comfort. Expert installation and service that ensure performance, longevity, and peace of mind.",
+    text: "Heating and cooling that keeps up with a Texas summer. Installed so you can service it later.",
     image: "/images/home/002-AG8ngQUaKOwqHCj9dRYgkQwAuysT.jpg",
   },
   {
     slug: "electrical",
     name: "Electrical",
-    text: "Modern, safe, and efficient electrical solutions tailored to today's homes and smart systems.",
+    text: "Safe wiring, enough circuits, and the extras you actually asked for.",
     image: "/images/home/047-AG8ngQVn8Uu2AV8Vzqhp3C6-nn4O.jpg",
   },
   {
     slug: "drywall",
     name: "Drywall",
-    text: "Flawless surfaces and clean finishes that prepare each space for color, texture, and style.",
+    text: "Hang it, tape it, sand it. Ready for paint, not a punch list later.",
     image: "/images/home/080-AG8ngQUnDiKZokqmv-J3cShQPYxy.jpg",
   },
   {
     slug: "painting",
     name: "Painting",
-    text: "Premium finishes that enhance every room, from soft neutrals to bold statements.",
+    text: "Clean coats, straight cut lines. The part everyone notices.",
     image: "/images/home/005-AG8ngQWhe4qNEUOYZnxZLXwW97v9.jpg",
   },
   {
     slug: "flooring",
     name: "Flooring",
-    text: "Durable and refined flooring installations that bring warmth, character, and lasting beauty to your home.",
+    text: "Tile, wood, or whatever you picked. Laid flat and finished so it lasts.",
     image: "/images/home/008-AG8ngQU9pu8hxsv4GHVhlrOfrZc6.jpg",
   },
   {
     slug: "cabinets",
     name: "Cabinets & closets",
-    text: "Custom-built storage solutions designed for both beauty and function, from handcrafted cabinetry to elegant, tailored closet systems that elevate everyday living.",
+    text: "Cabinets and closets built for the room, not a box from a catalog.",
     image: "/images/home/006-AG8ngQV9BM83zzIWY3Z1xptfpr8H.jpg",
   },
   {
     slug: "tile",
     name: "Tile",
-    text: "Detailed tile work that adds depth, texture, and luxury to kitchens, baths, and living spaces.",
+    text: "Showers, backsplashes, floors. Patterned or plain, laid tight.",
     image: "/images/home/013-AG8ngQWK6jvSylFbMDm5lWRXvjEN.jpg",
   },
   {
     slug: "welding",
     name: "Welding",
-    text: "High-quality, precise welding for both decorative and structural applications, built for strength and style.",
+    text: "Gates, rails, and the steel that has to hold. Built to last outside too.",
     image: "/images/home/162-AG8ngQX_BUv1dF-F7U0Tgv9wV0tH.jpg",
   },
 ];

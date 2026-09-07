@@ -1,6 +1,6 @@
 import { HTTPS, SITE_URL, pages, pageUrl } from "./config";
 
-/** Generated from src/seo/config.ts — do not edit domain here. */
+/** Generated from src/seo/config.ts. Do not edit domain here. */
 export function buildSitemapXml() {
   const urls = pages
     .map(

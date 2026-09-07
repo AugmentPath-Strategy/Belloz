@@ -7,22 +7,17 @@ export function Standard() {
     <div className="page-pad">
       <PageHero kicker="The Belloz Standard" title={story.eyebrow} />
 
-      <section className="mx-auto grid max-w-7xl items-start gap-12 px-6 py-20 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
-          <img src={founder.photo} alt={founder.name} className="w-full rounded-3xl object-cover" />
-          <p className="mt-5 text-3xl text-navy">{founder.name}</p>
-          <p className="text-stone">{founder.title}</p>
-        </div>
-        <div>
-          {story.paragraphs.map((p) => (
-            <p key={p} className="mb-6 text-lg text-stone">
-              {p}
-            </p>
-          ))}
-          <p className="text-2xl text-navy">
-            {founder.signOff}, {founder.title}
+      <section className="mx-auto max-w-3xl px-6 py-20">
+        <p className="text-3xl text-navy">{founder.name}</p>
+        <p className="text-stone">{founder.title}</p>
+        {story.paragraphs.map((p) => (
+          <p key={p} className="mt-6 text-lg text-stone">
+            {p}
           </p>
-        </div>
+        ))}
+        <p className="mt-8 text-2xl text-navy">
+          {founder.signOff}, {founder.title}
+        </p>
       </section>
 
       <section className="bg-cream px-6 py-20">

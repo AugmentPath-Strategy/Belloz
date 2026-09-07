@@ -31,7 +31,7 @@ export const pages: SeoPage[] = [
     path: "/",
     title: "Belloz Construction | Custom Homes in Central Texas",
     description:
-      "Belloz Construction LLC builds custom homes and remodels from foundation to finish across Central Texas, with craftsmanship, integrity, and exacting detail.",
+      "Belloz Construction LLC builds custom homes and remodels in Central Texas. Same crew from the slab to the last coat of paint. Call for a free estimate.",
     ogType: "website",
     schemaType: "WebPage",
     breadcrumb: "Home",
@@ -42,7 +42,7 @@ export const pages: SeoPage[] = [
     path: "/work",
     title: "Belloz Construction Work | Homes, Kitchens, Trades",
     description:
-      "See Belloz Construction work across Central Texas: custom homes, kitchens, baths, concrete, framing, and finish trades, from first pour to final coat.",
+      "Photos of Belloz Construction jobs in Central Texas. Custom homes, kitchens, baths, concrete, framing, and finish work. Call if you want a walkthrough.",
     ogType: "website",
     schemaType: "CollectionPage",
     breadcrumb: "Work",
@@ -53,7 +53,7 @@ export const pages: SeoPage[] = [
     path: "/homes",
     title: "Custom Homes by Belloz Construction | Texas Builds",
     description:
-      "Explore custom homes built by Belloz Construction in Central Texas, including featured residences finished with precision from foundation to last detail.",
+      "Custom homes Belloz Construction built in Central Texas. Look through a few of the houses, then call if you want to talk through how one of them went.",
     ogType: "website",
     schemaType: "CollectionPage",
     breadcrumb: "Homes",
@@ -64,7 +64,7 @@ export const pages: SeoPage[] = [
     path: "/standard",
     title: "The Belloz Standard | Craft, Integrity, Excellence",
     description:
-      "Read the Belloz Construction story, values, and standard of craft. Founder Enrique Bello on integrity, skilled crews, and why perfection is the standard.",
+      "Enrique Bello started Belloz Construction after too many cheap crews and leftover mistakes. Here is how the company works, and what we will not do on a job.",
     ogType: "article",
     schemaType: "AboutPage",
     breadcrumb: "The Standard",
@@ -75,7 +75,7 @@ export const pages: SeoPage[] = [
     path: "/contact",
     title: "Speak With Belloz Construction | Call or Text Today",
     description:
-      "Request a free estimate from Belloz Construction LLC. Call, text, or send four fields about your Central Texas custom home or remodel and we will follow up.",
+      "Request a free estimate from Belloz Construction. Call, text, or send your name, phone, and what you need. We work Central Texas and we will call you back.",
     ogType: "website",
     schemaType: "ContactPage",
     breadcrumb: "Contact",

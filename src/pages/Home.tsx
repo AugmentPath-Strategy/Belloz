@@ -35,10 +35,10 @@ export function Home() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.78)_0%,rgba(16,32,51,0.42)_52%,rgba(16,32,51,0.12)_100%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-6 pb-20 pt-28 md:justify-center md:pb-28">
-          <p className="label text-gold">Foundation to finish · {company.region}</p>
+          <p className="label text-gold">Foundation to finish in {company.region}</p>
           <h1 className="mt-5 max-w-3xl text-5xl md:text-7xl">Custom homes and remodels built to last.</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
-            One crew, one standard, from the first pour to the last coat. If you want it built right, start with a free estimate.
+            Same crew from the pour to the last coat of paint. Tell us about the job and we will come look at it.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a href="#estimate" className="btn btn-gold">
@@ -73,7 +73,7 @@ export function Home() {
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="label text-gold-deep">Recent projects</p>
-              <h2 className="mt-3 text-4xl text-navy md:text-5xl">Real homes, built by Belloz</h2>
+              <h2 className="mt-3 text-4xl text-navy md:text-5xl">Houses we have built</h2>
               <p className="mt-4 text-stone">{customHomes.paragraphs[0]}</p>
             </div>
             <Link to="/homes" className="hidden text-sm font-semibold text-navy underline decoration-gold underline-offset-4 md:block">
@@ -97,7 +97,7 @@ export function Home() {
             ))}
           </div>
           <Link to="/work" className="mt-8 block text-center text-sm font-semibold text-navy underline decoration-gold underline-offset-4">
-            See more project photography
+            See more job photos
           </Link>
         </div>
       </section>
@@ -107,8 +107,8 @@ export function Home() {
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="label text-gold-deep">Services</p>
-              <h2 className="mt-3 text-4xl text-navy md:text-5xl">From kitchens to custom homes</h2>
-              <p className="mt-4 text-stone">Every trade is handled in-house to the same standard.</p>
+              <h2 className="mt-3 text-4xl text-navy md:text-5xl">What we do</h2>
+              <p className="mt-4 text-stone">Kitchens, baths, new homes, and the trades in between. We stay on the job.</p>
             </div>
             <Link to="/work" className="hidden text-sm font-semibold text-navy underline decoration-gold underline-offset-4 md:block">
               All services
@@ -137,37 +137,27 @@ export function Home() {
       </section>
 
       <section className="section">
-        <div className="wrap grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <img
-              src={founder.photo}
-              alt={`${founder.name}, ${founder.title}`}
-              className="w-full rounded-3xl object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-            <p className="mt-4 text-2xl text-navy">{founder.name}</p>
-            <p className="text-stone">{founder.title}</p>
+        <div className="wrap">
+          <p className="label text-gold-deep">About the owner</p>
+          <h2 className="mt-3 max-w-3xl text-4xl text-navy md:text-5xl">We do not cut corners. That is the point.</h2>
+          <p className="mt-4 text-xl text-navy">
+            {founder.name}, {founder.title}
+          </p>
+          <div className="mt-6 max-w-3xl space-y-4 text-stone">
+            {story.paragraphs.slice(0, 2).map((p) => (
+              <p key={p}>{p}</p>
+            ))}
           </div>
-          <div>
-            <p className="label text-gold-deep">About the owner</p>
-            <h2 className="mt-3 text-4xl text-navy md:text-5xl">Perfection is not a luxury. It is the standard.</h2>
-            <div className="mt-6 space-y-4 text-stone">
-              {story.paragraphs.slice(0, 2).map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
-            <Link to="/standard" className="btn btn-navy mt-8">
-              Read our story
-            </Link>
-            <div className="mt-10 grid gap-3 sm:grid-cols-2">
-              {values.map((v) => (
-                <div key={v.title} className="rounded-3xl bg-cream p-5">
-                  <h3 className="text-2xl text-navy">{v.title}</h3>
-                  <p className="mt-2 text-sm text-stone">{v.text}</p>
-                </div>
-              ))}
-            </div>
+          <Link to="/standard" className="btn btn-navy mt-8">
+            Read our story
+          </Link>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {values.map((v) => (
+              <div key={v.title} className="rounded-3xl bg-cream p-5">
+                <h3 className="text-2xl text-navy">{v.title}</h3>
+                <p className="mt-2 text-sm text-stone">{v.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -175,9 +165,9 @@ export function Home() {
       <section className="section bg-cream">
         <div className="wrap">
           <p className="label text-gold-deep">Service area</p>
-          <h2 className="mt-3 text-4xl text-navy md:text-5xl">Built across Central Texas</h2>
+          <h2 className="mt-3 text-4xl text-navy md:text-5xl">Where we work</h2>
           <p className="mt-4 max-w-2xl text-stone">
-            Based in {company.location}. We take custom homes and remodels throughout {company.region}.
+            We are in {company.location}. We take jobs around {company.region}.
           </p>
           <ul className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {serviceAreas.map((city) => (
@@ -201,8 +191,8 @@ export function Home() {
         <div className="wrap grid items-start gap-10 lg:grid-cols-2">
           <div>
             <p className="label text-gold-deep">Free estimate</p>
-            <h2 className="mt-3 text-4xl text-navy md:text-5xl">Tell us about the project</h2>
-            <p className="mt-4 text-stone">Call, text, or send the form. We will take it from there.</p>
+            <h2 className="mt-3 text-4xl text-navy md:text-5xl">Tell us about the job</h2>
+            <p className="mt-4 text-stone">Call, text, or use the form. We will call you back.</p>
             <a href={phone.href} className="mt-8 block font-display text-4xl text-navy hover:text-gold-deep">
               {phone.display}
             </a>

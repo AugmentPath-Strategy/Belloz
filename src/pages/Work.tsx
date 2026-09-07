@@ -72,7 +72,7 @@ export function Work() {
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl text-navy">Project photography</h2>
           <p className="mt-3 max-w-2xl text-stone">
-            These images are from the Belloz Construction galleries: kitchens, baths, site work, and finishes across Central Texas.
+            Job photos from around Central Texas. Kitchens, baths, site work, and finishes.
           </p>
           <div className="mt-8 columns-2 gap-3 md:columns-3 lg:columns-4">
             {gallery.map((src, i) => (
