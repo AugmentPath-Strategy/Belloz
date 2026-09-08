@@ -5,7 +5,9 @@ type Props = {
   heading?: string;
 };
 
-const webhook = import.meta.env.VITE_SHEETS_WEBHOOK_URL;
+const webhook =
+  import.meta.env.VITE_SHEETS_WEBHOOK_URL ||
+  "https://script.google.com/macros/s/AKfycbzp90ntKRZL4iW2UIUeefDFbZv20vgwbSBBVwvs0S9oIlHPWodd-11JlD5lOezvm0ov/exec";
 
 export function EstimateForm({ heading = "Request a free estimate" }: Props) {
   const [sent, setSent] = useState(false);
@@ -79,7 +81,11 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
       <button type="submit" className="btn btn-gold mt-6 w-full" disabled={pending}>
         {pending ? "Sending…" : "Get a free estimate"}
       </button>
-      {sent && <p className="mt-3 text-sm text-stone">Request sent. We will call you back.</p>}
+      {sent && (
+        <p className="mt-4 text-sm font-medium text-navy">
+          Your data has been sent. We will reach out to you soon.
+        </p>
+      )}
       {error && <p className="mt-3 text-sm text-stone">{error}</p>}
     </form>
   );
