@@ -40,9 +40,9 @@ export function Home() {
             Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
           </p>
           <div className="mt-6 flex flex-col gap-1">
-            {company.phones.map((p) => (
+            {[...new Map(company.phones.map((p) => [p.display, p])).values()].map((p) => (
               <a
-                key={p.href}
+                key={p.display}
                 href={p.href}
                 className="inline-block font-display text-3xl text-gold hover:text-white md:text-4xl"
               >
@@ -55,7 +55,7 @@ export function Home() {
               Get a free estimate
             </a>
             {company.phones.map((p) => (
-              <a key={p.href} href={p.href} className="btn btn-line btn-line-light text-white">
+              <a key={p.name} href={p.href} className="btn btn-line btn-line-light text-white">
                 {p.label}
               </a>
             ))}
@@ -206,8 +206,8 @@ export function Home() {
             <h2 className="mt-3 text-4xl text-navy md:text-5xl">Tell us about the job</h2>
             <p className="mt-4 text-stone">Call, text, or use the form. We will call you back.</p>
             <div className="mt-8 flex flex-col gap-2">
-              {company.phones.map((p) => (
-                <a key={p.href} href={p.href} className="block font-display text-4xl text-navy hover:text-gold-deep">
+              {[...new Map(company.phones.map((p) => [p.display, p])).values()].map((p) => (
+                <a key={p.display} href={p.href} className="block font-display text-4xl text-navy hover:text-gold-deep">
                   {p.display}
                 </a>
               ))}

@@ -37,7 +37,7 @@ export function CallMenu({
         } ${drop === "up" ? "bottom-full mb-2" : "mt-2"}`}
       >
         {company.phones.map((p) => (
-          <a key={p.href} href={p.href} className="block px-4 py-3 hover:bg-cream">
+          <a key={p.name} href={p.href} className="block px-4 py-3 hover:bg-cream">
             <span className="block text-sm font-semibold text-navy">{p.label}</span>
             <span className="mt-0.5 block text-xs text-stone">{p.display}</span>
           </a>

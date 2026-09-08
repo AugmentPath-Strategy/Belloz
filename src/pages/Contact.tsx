@@ -14,7 +14,7 @@ export function Contact() {
       <section id="estimate" className="wrap grid scroll-mt-28 gap-8 py-16 lg:grid-cols-2">
         <div className="space-y-4">
           {company.phones.map((p) => (
-            <a key={p.display} href={p.href} className="card block p-7">
+            <a key={p.name} href={p.href} className="card block p-7">
               <p className="label text-gold-deep">{p.label}</p>
               <p className="mt-2 font-display text-4xl text-navy">{p.display}</p>
             </a>
@@ -25,7 +25,7 @@ export function Contact() {
           </a>
           <div className="flex flex-wrap gap-3">
             {company.phones.map((p) => (
-              <a key={p.href} href={p.href} className="btn btn-gold">
+              <a key={p.name} href={p.href} className="btn btn-gold">
                 {p.label}
               </a>
             ))}

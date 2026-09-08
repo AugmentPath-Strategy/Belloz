@@ -87,7 +87,7 @@ export function Terms() {
                 </a>
               </li>
               {company.phones.map((p) => (
-                <li key={p.display}>
+                <li key={p.name}>
                   {p.label}:{" "}
                   <a className="underline decoration-gold underline-offset-4" href={p.href}>
                     {p.display}
@@ -107,7 +107,7 @@ export function Terms() {
 
         <div className="mt-12 flex flex-wrap gap-3">
           {company.phones.map((p) => (
-            <a key={p.href} href={p.href} className="btn btn-navy">
+            <a key={p.name} href={p.href} className="btn btn-navy">
               {p.label}
             </a>
           ))}

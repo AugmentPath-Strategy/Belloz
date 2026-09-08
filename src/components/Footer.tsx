@@ -32,7 +32,7 @@ export function Footer() {
           <p className="label mb-4 text-gold">Contact</p>
           <div className="flex flex-col gap-2 text-sm text-white/75">
             {company.phones.map((p) => (
-              <a key={p.display} href={p.href} className="hover:text-gold">
+              <a key={p.name} href={p.href} className="hover:text-gold">
                 {p.label}: {p.display}
               </a>
             ))}
