@@ -3,7 +3,6 @@ export const company = {
   shortName: "Belloz",
   email: "bellozconstruction@gmail.com",
   phones: [
-    { name: "Enrique", label: "Call Enrique", display: "(512) 563-3244", href: "tel:+15125633244" },
     { name: "Angela", label: "Call Angela", display: "(512) 563-3244", href: "tel:+15125633244", sms: "sms:+15125633244" },
     { name: "Manuel", label: "Call Manuel", display: "(512) 202-0459", href: "tel:+15122020459", sms: "sms:+15122020459" },
   ],
