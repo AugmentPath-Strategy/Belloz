@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { ChatLead } from "./components/ChatLead";
 import { MobileDock } from "./components/MobileDock";
 import { Seo } from "./seo/Seo";
 import { Contact } from "./pages/Contact";
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
+      <ChatLead />
       <MobileDock />
     </div>
   );

@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { projectTypes } from "../data/content";
+import { normalizePhone, phoneForSheet } from "../lib/phone";
 
 type Props = {
   heading?: string;
@@ -25,9 +26,14 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    const phone = normalizePhone(String(data.get("phone") || ""));
+    if (!phone.ok) {
+      setError("Enter a full phone number with country code, like +1 512 202 0459 or +91 98765 43210.");
+      return;
+    }
     const payload = {
       name: String(data.get("name") || ""),
-      phone: String(data.get("phone") || ""),
+      phone: phoneForSheet(phone.display),
       type: String(data.get("type") || ""),
       message: String(data.get("message") || ""),
     };
@@ -59,7 +65,14 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
       </label>
       <label className="mt-4 block text-sm font-medium text-navy">
         Phone
-        <input name="phone" type="tel" required autoComplete="tel" className="field" />
+        <input
+          name="phone"
+          type="text"
+          inputMode="tel"
+          autoComplete="tel"
+          required
+          className="field"
+        />
       </label>
       <label className="mt-4 block text-sm font-medium text-navy">
         Project type
