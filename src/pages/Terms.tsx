@@ -105,9 +105,9 @@ export function Terms() {
           </article>
         </div>
 
-        <div className="mt-12 flex flex-wrap gap-3">
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
           {company.phones.map((p) => (
-            <a key={p.name} href={p.href} className="btn btn-navy">
+            <a key={p.name} href={p.href} className="btn btn-navy w-full sm:w-auto">
               {p.label}
             </a>
           ))}

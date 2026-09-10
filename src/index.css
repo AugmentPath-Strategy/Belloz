@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -64,6 +65,7 @@ h3,
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1;
+  text-align: center;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -102,7 +104,13 @@ h3,
 .wrap {
   margin-inline: auto;
   max-width: 80rem;
-  padding-inline: 1.5rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 1.5rem;
+  }
 }
 
 .section {
@@ -132,7 +140,7 @@ h3,
 }
 
 .page-pad {
-  padding-bottom: 5.5rem;
+  padding-bottom: 7.5rem;
 }
 
 @media (min-width: 768px) {

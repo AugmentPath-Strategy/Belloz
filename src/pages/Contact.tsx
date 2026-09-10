@@ -16,16 +16,16 @@ export function Contact() {
           {company.phones.map((p) => (
             <a key={p.name} href={p.href} className="card block p-7">
               <p className="label text-gold-deep">{p.label}</p>
-              <p className="mt-2 font-display text-4xl text-navy">{p.display}</p>
+              <p className="mt-2 break-all font-display text-2xl text-navy sm:text-4xl">{p.display}</p>
             </a>
           ))}
           <a href={`mailto:${company.email}`} className="card block bg-cream p-7">
             <p className="label text-gold-deep">Email</p>
-            <p className="mt-2 font-display text-3xl text-navy">{company.email}</p>
+            <p className="mt-2 break-all font-display text-2xl text-navy sm:text-3xl">{company.email}</p>
           </a>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {company.phones.map((p) => (
-              <a key={p.name} href={p.href} className="btn btn-gold">
+              <a key={p.name} href={p.href} className="btn btn-gold w-full min-w-0 px-3">
                 {p.label}
               </a>
             ))}

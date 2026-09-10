@@ -3,7 +3,7 @@ import { company, images, nav } from "../data/content";
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-white">
+    <footer className="bg-navy pb-24 text-white md:pb-0">
       <div className="wrap grid gap-12 py-16 md:grid-cols-4">
         <div>
           <img src={images.logo} alt="Belloz Construction" className="mb-4 h-12 w-12 rounded object-cover" />

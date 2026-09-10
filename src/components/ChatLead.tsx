@@ -136,9 +136,9 @@ export function ChatLead() {
   }
 
   return (
-    <div className="fixed right-4 z-[60] bottom-[5.75rem] md:bottom-6 md:right-6">
+    <div className="fixed right-3 z-[60] bottom-[calc(5.25rem+env(safe-area-inset-bottom,0px))] md:bottom-6 md:right-6">
       {open && (
-        <div className="mb-3 flex h-[min(32rem,calc(100svh-10rem))] w-[min(22.5rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/10">
+        <div className="mb-3 flex h-[min(28rem,calc(100svh-12rem))] w-[min(22.5rem,calc(100vw-1.5rem))] flex-col overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/10">
           <div className="flex items-start justify-between gap-3 bg-navy px-5 py-4 text-white">
             <div>
               <p className="font-display text-2xl">Talk with us</p>
@@ -205,7 +205,7 @@ export function ChatLead() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold text-navy shadow-lg ring-1 ring-black/10 hover:bg-gold-deep hover:text-white"
+        className="ml-auto flex h-12 w-12 items-center justify-center rounded-full bg-gold text-navy shadow-lg ring-1 ring-black/10 hover:bg-gold-deep hover:text-white md:h-14 md:w-14"
         aria-expanded={open}
         aria-label={open ? "Close chat" : "Open chat"}
       >

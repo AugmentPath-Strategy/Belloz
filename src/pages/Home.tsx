@@ -33,9 +33,9 @@ export function Home() {
           className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.78)_0%,rgba(16,32,51,0.42)_52%,rgba(16,32,51,0.12)_100%)]" />
-        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-6 pb-20 pt-28 md:justify-center md:pb-28">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pb-28 pt-24 sm:px-6 md:justify-center md:pb-28">
           <p className="label text-gold">Foundation to finish in {company.region}</p>
-          <h1 className="mt-5 max-w-3xl text-5xl uppercase md:text-7xl">Custom Homes and Remodels Built to Last.</h1>
+          <h1 className="mt-5 max-w-3xl text-[2.15rem] uppercase leading-tight sm:text-5xl md:text-7xl">Custom Homes and Remodels Built to Last.</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
             Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
           </p>
@@ -44,18 +44,18 @@ export function Home() {
               <a
                 key={p.display}
                 href={p.href}
-                className="inline-block font-display text-3xl text-gold hover:text-white md:text-4xl"
+                className="inline-block font-display text-2xl text-gold hover:text-white sm:text-3xl md:text-4xl"
               >
                 {p.display}
               </a>
             ))}
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#estimate" className="btn btn-gold">
+          <div className="mt-8 grid w-full max-w-md grid-cols-1 gap-3 sm:max-w-lg sm:grid-cols-2">
+            <a href="#estimate" className="btn btn-gold w-full sm:col-span-2">
               Get a free estimate
             </a>
             {company.phones.map((p) => (
-              <a key={p.name} href={p.href} className="btn btn-line btn-line-light text-white">
+              <a key={p.name} href={p.href} className="btn btn-line btn-line-light w-full text-white">
                 {p.label}
               </a>
             ))}
@@ -207,7 +207,7 @@ export function Home() {
             <p className="mt-4 text-stone">Call, text, or use the form. We will call you back.</p>
             <div className="mt-8 flex flex-col gap-2">
               {[...new Map(company.phones.map((p) => [p.display, p])).values()].map((p) => (
-                <a key={p.display} href={p.href} className="block font-display text-4xl text-navy hover:text-gold-deep">
+                <a key={p.display} href={p.href} className="block font-display text-3xl text-navy hover:text-gold-deep sm:text-4xl">
                   {p.display}
                 </a>
               ))}

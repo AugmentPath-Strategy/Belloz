@@ -26,7 +26,7 @@ export function Work() {
       <PageHero kicker={builtBy.subtitle} title={builtBy.title} text={builtBy.galleries} />
 
       <section className="sticky top-[72px] z-30 border-b border-black/5 bg-[#f7f4ef]/95 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-6 py-4">
+        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <p className="label mb-3 text-stone">Jump to a service</p>
           <div className="flex flex-wrap gap-2">
             <button

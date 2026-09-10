@@ -25,9 +25,9 @@ export function CallMenu({
           : "btn-gold";
 
   return (
-    <details className={`relative ${className}`}>
+    <details className={`relative min-w-0 ${className}`}>
       <summary
-        className={`btn ${variantClass} cursor-pointer list-none [&::-webkit-details-marker]:hidden`}
+        className={`btn ${variantClass} w-full cursor-pointer list-none [&::-webkit-details-marker]:hidden`}
       >
         {label}
       </summary>

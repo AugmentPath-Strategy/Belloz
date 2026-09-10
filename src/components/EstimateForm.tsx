@@ -56,8 +56,8 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="card p-8">
-      <h2 className="text-3xl text-navy">{heading}</h2>
+    <form onSubmit={onSubmit} className="card p-5 sm:p-8">
+      <h2 className="text-2xl text-navy sm:text-3xl">{heading}</h2>
       <p className="mt-2 text-stone">Name, phone, what you need. We call you back.</p>
       <label className="mt-6 block text-sm font-medium text-navy">
         Name
