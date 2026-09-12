@@ -46,7 +46,7 @@ export const builtBy = {
   subtitle: "from foundation to finish",
   intro:
     "Same crew on the job from the first pour to the last coat of paint. We do not hand the whole thing off and hope it comes out right.",
-  galleries: "Photos from jobs around Central Texas. New builds, remodels, and the work in between.",
+  galleries: "Photos from jobs around Austin and Central Texas. New builds, remodels, and the work in between.",
 };
 
 export const customHomes = {

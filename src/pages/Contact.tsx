@@ -8,7 +8,7 @@ export function Contact() {
       <PageHero
         kicker="Free estimate"
         title="Request an estimate. We will call you back."
-        text="Four fields, or just call. That is how most jobs start."
+        text="Four fields, or just call. That is how most jobs start in Austin and Central Texas."
       />
 
       <section id="estimate" className="wrap grid scroll-mt-28 gap-8 py-16 lg:grid-cols-2">

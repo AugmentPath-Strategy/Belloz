@@ -34,6 +34,4 @@ function seoPlugin(): Plugin {
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), seoPlugin()],
-  // TODO: HTTPS redirect belongs at the host after TLS is live (CDN/nginx/Netlify).
-  // Do not hardcode a production domain redirect here.
 });

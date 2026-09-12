@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://example.com</loc>
+    <loc>https://bellozconstruction.com</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg</image:loc>
+      <image:title>Custom home in Central Texas built by Belloz Construction</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://example.com/work</loc>
+    <loc>https://bellozconstruction.com/work</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://example.com/homes</loc>
+    <loc>https://bellozconstruction.com/homes</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/003-AG8ngQW_k5b4jescg0qVmyFT5r-i.jpg</image:loc>
+      <image:title>The Twin Oaks Farmhouse by Belloz Construction</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/004-AG8ngQW10PVOJPEbhv86WiVejrPM.jpg</image:loc>
+      <image:title>The Blackwood Residence by Belloz Construction</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/005-AG8ngQWe6HPfSMkRd0XcB9Emd75l.jpg</image:loc>
+      <image:title>The White Gable House by Belloz Construction</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/006-AG8ngQXaX5NrMJt__5J29KpzoT22.jpg</image:loc>
+      <image:title>The Chevron Timber Build by Belloz Construction</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://bellozconstruction.com/images/homes/007-AG8ngQXhOi3AK77aRHMGFYylngt2.jpg</image:loc>
+      <image:title>The Shadow Oak Residence by Belloz Construction</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://example.com/standard</loc>
+    <loc>https://bellozconstruction.com/standard</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/contact</loc>
+    <loc>https://bellozconstruction.com/contact</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/terms</loc>
+    <loc>https://bellozconstruction.com/terms</loc>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -8,7 +8,7 @@ export function Homes() {
 
   return (
     <div className="page-pad">
-      <PageHero kicker={customHomes.title} title="Homes built with precision and purpose." text={customHomes.paragraphs[0]} />
+      <PageHero kicker={customHomes.title} title="Custom homes built in Austin and Central Texas." text={customHomes.paragraphs[0]} />
       <section className="mx-auto max-w-3xl px-6 py-16">
         {customHomes.paragraphs.slice(1).map((p) => (
           <p key={p} className="mb-5 text-lg text-stone">

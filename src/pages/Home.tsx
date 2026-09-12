@@ -37,7 +37,7 @@ export function Home() {
           <p className="label text-gold">Foundation to finish in {company.region}</p>
           <h1 className="mt-5 max-w-3xl text-[2.15rem] uppercase leading-tight sm:text-5xl md:text-7xl">Custom Homes and Remodels Built to Last.</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
-            Same crew from the pour to the last coat of paint. Tell us about your project and we can meet on site for an estimate.
+            Same crew from the pour to the last coat of paint. We build and remodel in Austin and Central Texas. Tell us about your project and we can meet on site for an estimate.
           </p>
           <div className="mt-6 flex flex-col gap-1">
             {[...new Map(company.phones.map((p) => [p.display, p])).values()].map((p) => (
