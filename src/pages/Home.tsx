@@ -35,7 +35,7 @@ export function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(16,32,51,0.78)_0%,rgba(16,32,51,0.42)_52%,rgba(16,32,51,0.12)_100%)]" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pb-28 pt-24 sm:px-6 md:justify-center md:pb-28">
           <p className="label text-gold">Foundation to finish in {company.region}</p>
-          <h1 className="mt-5 max-w-3xl text-[2.15rem] uppercase leading-tight sm:text-5xl md:text-7xl">Custom Homes and Remodels Built to Last.</h1>
+          <h1 className="mt-5 max-w-3xl text-[2.15rem] leading-tight sm:text-5xl md:text-7xl">Custom Homes and Remodels Built to Last</h1>
           <p className="mt-7 max-w-xl text-lg text-white/80">
             Same crew from the pour to the last coat of paint. We build and remodel in Austin and Central Texas. Tell us about your project and we can meet on site for an estimate.
           </p>
@@ -54,11 +54,6 @@ export function Home() {
             <a href="#estimate" className="btn btn-gold w-full sm:col-span-2">
               Get a free estimate
             </a>
-            {company.phones.map((p) => (
-              <a key={p.name} href={p.href} className="btn btn-line btn-line-light w-full text-white">
-                {p.label}
-              </a>
-            ))}
           </div>
         </div>
       </section>

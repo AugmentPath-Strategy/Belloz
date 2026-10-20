@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { images, nav } from "../data/content";
-import { CallMenu } from "./CallMenu";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -38,7 +37,6 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-3">
-          <CallMenu className="hidden lg:block" />
           <button
             className="flex h-11 w-11 items-center justify-center rounded-full border border-navy/15 text-navy lg:hidden"
             onClick={() => setOpen((v) => !v)}

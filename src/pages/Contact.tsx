@@ -23,13 +23,6 @@ export function Contact() {
             <p className="label text-gold-deep">Email</p>
             <p className="mt-2 break-all font-display text-2xl text-navy sm:text-3xl">{company.email}</p>
           </a>
-          <div className="grid grid-cols-2 gap-3">
-            {company.phones.map((p) => (
-              <a key={p.name} href={p.href} className="btn btn-gold w-full min-w-0 px-3">
-                {p.label}
-              </a>
-            ))}
-          </div>
         </div>
         <EstimateForm />
       </section>

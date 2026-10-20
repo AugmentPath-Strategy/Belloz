@@ -1,10 +1,10 @@
 export const company = {
   name: "Belloz Construction LLC",
   shortName: "Belloz",
-  email: "bellozconstruction@gmail.com",
+  email: "bellozofficial.construction@gmail.com",
   phones: [
-    { name: "Manuel", label: "Call Manuel", display: "(512) 202-0459", href: "tel:+15122020459", sms: "sms:+15122020459" },
-    { name: "Angela", label: "Call Angela", display: "(512) 563-3244", href: "tel:+15125633244", sms: "sms:+15125633244" },
+    { name: "Manuel", label: "Manuel", display: "(512) 202-0459", href: "tel:+15122020459", sms: "sms:+15122020459" },
+    { name: "Angela", label: "Angela", display: "(512) 563-3244", href: "tel:+15125633244", sms: "sms:+15125633244" },
   ],
   socials: [
     { label: "Facebook", href: "https://www.facebook.com/bellozconstruction" },
@@ -294,6 +294,7 @@ export const projectTypes = [
   "Kitchen remodel",
   "Bath remodel",
   "Full remodel",
+  "Junk Removal",
   "Other",
 ];
 
