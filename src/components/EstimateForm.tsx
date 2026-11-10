@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { projectTypes } from "../data/content";
+import { company, projectTypes } from "../data/content";
 import { normalizePhone, phoneForSheet } from "../lib/phone";
 
 type Props = {
@@ -40,16 +40,19 @@ export function EstimateForm({ heading = "Request a free estimate" }: Props) {
 
     setPending(true);
     try {
-      await fetch(webhook, {
+      // Read the script's reply so a failed save shows an error instead of "sent".
+      const res = await fetch(webhook, {
         method: "POST",
-        mode: "no-cors",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(payload),
       });
+      const reply = await res.json().catch(() => null);
+      if (!reply?.ok) throw new Error("Lead was not received");
       setSent(true);
       form.reset();
     } catch {
-      setError("Could not send the estimate. Try again or call us.");
+      const callUs = company.phones.map((p) => `${p.name} at ${p.display}`).join(" or ");
+      setError(`We couldn't send your request. Please call ${callUs}.`);
     } finally {
       setPending(false);
     }
